@@ -207,3 +207,22 @@ array([[1., 1., 1., 1.],
 <img src="np1.png">
 
 
+### Installing dask on single machine 
+
+```
+ 90  pip install dask 
+   91  pip install dask[complete] 
+```
+
+### checking dask version 
+
+```
+(ashu-env) ubuntu@ip-172-31-24-249:~$ python3
+Python 3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dask
+>>> dask.__version__
+'2025.2.0'
+>>> 
+
+```
