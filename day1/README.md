@@ -173,3 +173,37 @@ Type "help", "copyright", "credits" or "license" for more information.
 ['False_', 'ScalarType', 'True_', '_CopyMode', '_NoValue', '__NUMPY_SETUP__', '__all__', '__array_api_version__', '__array_namespace_info__', '__builtins__', '__cached__', '__config__', '__dir__', '__doc__', '__expired_attributes__', '__file__', '__former_attrs__', '__future_scalars__', '__getattr__', '__loader__', '__name__', '__numpy_submodules__', '__package__', '__path__', '__spec__', '__version__', '_array_api_info', '_core', '_distributor_init', '_expired_attrs_2_0', '_globals', '_int_extended_msg', '_mat', '_msg', '_pyinstaller_hooks_dir', '_pytesttester', '_specific_msg', '_type_info', '_typing', '_utils', 'abs', 'absolute', 'acos', 'acosh', 'add', 'all', 'allclose', 'amax', 'amin', 'angle', 'any', 'append', 'apply_along_axis', 'apply_over_axes', 'arange', 'arccos', 'arccosh', 'arcsin', 'arcsinh', 'arctan', 'arctan2', 'arctanh', 'argmax', 'argmin', 'argpartition', 'argsort', 'argwhere', 'around', 'array', 'array2string', 'array_equal', 'array_equiv', 'array_repr', 'array_split', 'array_str', 'asany
 
 ```
+
+## Some basic examples of data storage using numpy 
+
+```
+ashu-env) ubuntu@ip-172-31-24-249:~$ python3
+Python 3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> import numpy  as np 
+>>> 
+>>> arr1 = np.array([1,4,6,7,8])
+>>> arr1
+array([1, 4, 6, 7, 8])
+>>> 
+>>> np.zeros(10)
+array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+>>> np.ones(10)
+array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])
+>>> 
+>>> arr2 = np.ones((3,4))
+>>> arr2
+array([[1., 1., 1., 1.],
+       [1., 1., 1., 1.],
+       [1., 1., 1., 1.]])
+>>> 
+
+
+
+
+```
+
+<img src="np1.png">
+
+
