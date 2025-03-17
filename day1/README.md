@@ -145,3 +145,31 @@ dict_values(['ashu', 100, 8000])
 <img src="ds3.png">
 
 Dask is a flexible, open-source library for parallel computing in Python. It is designed to scale Python code from single machines to large clusters, enabling efficient handling of larger-than-memory datasets and parallelizing computations. Dask integrates seamlessly with the Python ecosystem, including libraries like NumPy, pandas, and scikit-learn.
+
+### Installing Numpy in python venv 
+
+```
+(ashu-env) ubuntu@ip-172-31-24-249:~$ pip install numpy 
+Collecting numpy
+  Using cached numpy-2.2.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Using cached numpy-2.2.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.1 MB)
+Installing collected packages: numpy
+Successfully installed numpy-2.2.4
+(ashu-env) ubuntu@ip-172-31-24-249:~$ 
+
+===>
+(ashu-env) ubuntu@ip-172-31-24-249:~$ python3
+Python 3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy
+>>> numpy.__version__
+'2.2.4'
+>>> 
+
+
+>>> import numpy  as np 
+>>> import numpy  as ashunp
+>>> dir(ashunp)
+['False_', 'ScalarType', 'True_', '_CopyMode', '_NoValue', '__NUMPY_SETUP__', '__all__', '__array_api_version__', '__array_namespace_info__', '__builtins__', '__cached__', '__config__', '__dir__', '__doc__', '__expired_attributes__', '__file__', '__former_attrs__', '__future_scalars__', '__getattr__', '__loader__', '__name__', '__numpy_submodules__', '__package__', '__path__', '__spec__', '__version__', '_array_api_info', '_core', '_distributor_init', '_expired_attrs_2_0', '_globals', '_int_extended_msg', '_mat', '_msg', '_pyinstaller_hooks_dir', '_pytesttester', '_specific_msg', '_type_info', '_typing', '_utils', 'abs', 'absolute', 'acos', 'acosh', 'add', 'all', 'allclose', 'amax', 'amin', 'angle', 'any', 'append', 'apply_along_axis', 'apply_over_axes', 'arange', 'arccos', 'arccosh', 'arcsin', 'arcsinh', 'arctan', 'arctan2', 'arctanh', 'argmax', 'argmin', 'argpartition', 'argsort', 'argwhere', 'around', 'array', 'array2string', 'array_equal', 'array_equiv', 'array_repr', 'array_split', 'array_str', 'asany
+
+```
