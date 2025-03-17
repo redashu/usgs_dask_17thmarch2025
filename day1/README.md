@@ -51,3 +51,50 @@ ubuntu@ip-172-31-24-249:~$ source  ashu-env/bin/activate
 (ashu-env) ubuntu@ip-172-31-24-249:~$ 
 
 ```
+
+### Some basic data structure in python 
+
+```
+(ashu-env) ubuntu@ip-172-31-24-249:~$ python3
+Python 3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> tuple()
+()
+>>> list()
+[]
+>>> dict()
+{}
+>>> 
+
+
+===> creating tuple 
+
+>>> t1=(1,2,3,100)
+>>> t1
+(1, 2, 3, 100)
+>>> type(t1)
+<class 'tuple'>
+>>> len(t1)
+4
+
+>> t2=(1,2,4,100,"hello world",4.5)
+>>> type(t2)
+<class 'tuple'>
+>>> len(t2)
+6
+>>> 
+
+>>> t1
+(1, 2, 3, 100)
+>>> t1[0]
+1
+>>> t1[2]
+3
+
+```
+
+### Tuple basic info 
+
+<img src="tup1.png">
+
