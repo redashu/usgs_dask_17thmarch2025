@@ -226,3 +226,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 
 ```
+
+### Understanding spark working for dask 
+
+<img src="dask1.png">
+
