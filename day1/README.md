@@ -98,3 +98,35 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <img src="tup1.png">
 
+
+### some basic info about list 
+
+```
+>> l1=[2,6,1,9]
+>>> 
+>>> type(l1)
+<class 'list'>
+>>> 
+>>> l1
+[2, 6, 1, 9]
+>>> 
+>>> l2=[2,66,11,99,5.3,"hello dask"]
+>>> 
+>>> len(l2)
+6
+>>> l1
+[2, 6, 1, 9]
+>>> l1.append(100)
+>>> l1
+[2, 6, 1, 9, 100]
+>>> 
+>>> l1.insert(0,878)
+>>> l1
+[878, 2, 6, 1, 9, 100]
+>>> l1.append(t1)
+>>> l1
+[878, 2, 6, 1, 9, 100, (1, 2, 3, 100)]
+>>> 
+
+
+```
