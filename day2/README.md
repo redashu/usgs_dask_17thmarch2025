@@ -189,3 +189,21 @@ WantedBy=multi-user.target
  sudo systemctl status dask-scheduler # checking status 
  sudo systemctl enable dask-scheduler # making it auto start on system start
 ```
+
+
+### starting dask-worker 
+
+```
+ashu-env) ubuntu@ip-172-31-16-49:~$ sudo -i
+root@ip-172-31-16-49:~# whoami
+root
+root@ip-172-31-16-49:~# cd /etc/systemd/system
+ wget https://raw.githubusercontent.com/redashu/usgs_dask_17thmarch2025/refs/heads/master/day2/dask-worker.service
+
+  sudo systemctl daemon-reload 
+
+  sudo systemctl start dask-worker
+  sudo systemctl status dask-worker
+   sudo systemctl enable dask-worker
+
+```
