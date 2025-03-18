@@ -7,7 +7,7 @@ import dask.array as da
 cluster = LocalCluster(
     n_workers=2,  # Number of workers to create use your cpu cores count 
     threads_per_worker=2, # number of threads per worker
-    memory_limit='2GB' # memory limit per worker 
+    memory_limit='2GB' # memory limit per worker you can also use 40% of total memory
 )
 # Creating client
 client = Client(cluster)
