@@ -59,3 +59,37 @@ ubuntu@ip-172-31-16-49:~$ source ashu-env/bin/activate
 
 pip install dask dask[complete] distributed 
 ```
+
+### setup dask single node cluster using given methods 
+
+<img src="setup4.png">
+
+### using python3 to load localCluster of Dask 
+
+```
+ashu-env) ubuntu@ip-172-31-16-49:~$ python3
+Python 3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> import dask 
+>>> dir(dask)
+['__builtins__', '__cached__', '__doc__', '__file__', '__git_revision__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', '_compatibility', '_task_spec', '_version', 'annotate', 'annotations', 'base', 'callbacks', 'compute', 'config', 'context', 'core', 'datasets', 'delayed', 'get', 'get_annotations', 'hashing', 'highlevelgraph', 'is_dask_collection', 'istask', 'local', 'multiprocessing', 'optimization', 'optimize', 'order', 'persist', 'sizeof', 'system', 'threaded', 'tokenize', 'typing', 'utils', 'visualize', 'widgets']
+>>> 
+>>> 
+>>> from dask.distributed  import LocalCluster 
+>>> from dask.distributed  import Client 
+>>> from dask.distributed  import LocalCluster,Client  
+>>> 
+# Creating cluster on single Node 
+>>> cluster = LocalCluster() 
+>>> 
+>>> # connect cluster 
+>>> ashu_connect = Client(cluster)
+>>> dir(ashu_connect)
+['_', '_Client__loop', '__aenter__', '__aexit__', '__annotations__', '__await__', '__class__', '__del__', '__delattr__', '__dict__', '__dir__', '__doc__', '__enter__', '__eq__', '__exit__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_asynchronous', '_cancel', '_close', '_connecting_to_scheduler', '_dec_ref', '_default_event_handlers', '_deserializers', '_dump_cluster_state', '_ensure_connected', '_event_handlers', '_expand_key', '_gather', '_gather_future', '_gather_keys', '_gather_remote', '_gather_semaphore', '_get_components_from_future', '_get_computation_code', '
+
+# getting cluster dashboard URL of Scheduler
+>>> ashu_connect.dashboard_link
+'http://127.0.0.1:8787/status'
+
+```
