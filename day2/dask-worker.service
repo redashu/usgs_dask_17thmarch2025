@@ -1,0 +1,15 @@
+[Unit]
+Description=Dask Scheduler
+After=network.target
+
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+ExecStart=/home/ubuntu/ashu-env/bin/dask-worker tcp://172.31.31.30:8786
+Restart=always
+RestartSec=5
+
+
+[Install]
+WantedBy=multi-user.target

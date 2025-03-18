@@ -130,3 +130,62 @@ print(result2.compute())
 client.shutdown()
 
 ```
+
+### multi node dask cluter setup options 
+
+<img src="cls1.png">
+
+### Understanding dask multi node cluster 
+
+<img src="cls2.png">
+
+# settting up dask -scheduler machine 
+
+### common steps to perform in all the machines 
+
+```
+ 1  sudo apt update
+    2  sudo apt install python3-venv -y
+    3  history 
+    4  python3 -m venv dask-scheduler-env 
+    5  ls
+    6  source dask-scheduler-env/bin/activate
+    7  pip install dask dask[complete] distributed
+```
+
+### starting scheduler process 
+```
+dask-scheduler
+```
+
+### above method temp so making start up script 
+
+```
+sudo vim /etc/systemd/system/dask-scheduler.service
+
+[Unit]
+Description=Dask Scheduler
+After=network.target
+
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+ExecStart=/home/ubuntu/dask-scheduler-env/bin/dask-scheduler
+Restart=always
+RestartSec=5
+
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+### starting schduler service 
+
+```
+ sudo systemctl daemon-reload 
+ sudo systemctl start dask-scheduler # for starting 
+ sudo systemctl status dask-scheduler # checking status 
+ sudo systemctl enable dask-scheduler # making it auto start on system start
+```
