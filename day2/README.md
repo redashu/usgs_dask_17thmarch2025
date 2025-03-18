@@ -191,9 +191,18 @@ WantedBy=multi-user.target
 ```
 
 
-### starting dask-worker 
+### starting and setting up worker dask-worker 
 
 ```
+
+sudo apt update
+    2  sudo apt install python3-venv -y
+    3  history 
+    4  python3 -m venv dask-scheduler-env 
+    5  ls
+    6  source dask-scheduler-env/bin/activate
+    7  pip install dask dask[complete] distributed
+
 ashu-env) ubuntu@ip-172-31-16-49:~$ sudo -i
 root@ip-172-31-16-49:~# whoami
 root
@@ -207,3 +216,6 @@ root@ip-172-31-16-49:~# cd /etc/systemd/system
    sudo systemctl enable dask-worker
 
 ```
+
+
+### 
