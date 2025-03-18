@@ -28,3 +28,34 @@ dask                      2025.2.0
 (ashu-env) ubuntu@ip-172-31-24-249:~$ 
 
 ```
+
+### Dask setup options 
+
+<img src="setup1.png">
+
+### Dask cluster components 
+
+<img src="setup2.png">
+
+### Dask cluster on Single Node 
+
+<img src="setup3.png">
+
+### setup Dask local cluster (single node ) in Ubuntu 
+
+```
+sudo apt update
+sudo apt install python3-venv 
+
+===>
+ubuntu@ip-172-31-16-49:~$ python3 -m venv  ashu-env
+
+ubuntu@ip-172-31-16-49:~$ ls
+ashu-env
+
+ubuntu@ip-172-31-16-49:~$ source ashu-env/bin/activate
+(ashu-env) ubuntu@ip-172-31-16-49:~$ 
+(ashu-env) ubuntu@ip-172-31-16-49:~$ 
+
+pip install dask dask[complete] distributed 
+```
