@@ -218,4 +218,7 @@ root@ip-172-31-16-49:~# cd /etc/systemd/system
 ```
 
 
-### 
+### Reading data from external source to process in dask cluster 
+ 
+<img src="st1.png">
+
