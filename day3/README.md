@@ -56,3 +56,7 @@ pip install s3fs
 ```
 
 ### Note: installing s3fs in each cluster 
+
+### blocks in dataframe 
+
+<img src="blocks.png">
