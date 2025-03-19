@@ -27,3 +27,8 @@ sudo systemctl status dask-worker
              └─842 /home/ubuntu/ashu-env/bin/python3 -c "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=11, pipe_handle=17)" --multiproc>
 
 ```
+
+### checking port and service in dask cluster 
+
+<img src="dsk.png">
+
