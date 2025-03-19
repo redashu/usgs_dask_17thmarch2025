@@ -60,3 +60,17 @@ pip install s3fs
 ### blocks in dataframe 
 
 <img src="blocks.png">
+
+### Understanding filter in dask bag 
+
+<img src="bg1.png">
+
+### for very big size semi , unstructure data -- doing word count operation 
+### using map reduce way 
+
+[go_here](https://www.edureka.co/blog/mapreduce-tutorial/)
+
+### word count using dask bag 
+
+<img src="wc1.png">
+
