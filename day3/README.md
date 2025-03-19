@@ -32,3 +32,10 @@ sudo systemctl status dask-worker
 
 <img src="dsk.png">
 
+### Doing dataframe with github based dataset using dask cluster 
+
+<img src="gitds.png">
+
+### some example of  data analysis with sales 
+
+<img src="sales1.png">
