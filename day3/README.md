@@ -39,3 +39,20 @@ sudo systemctl status dask-worker
 ### some example of  data analysis with sales 
 
 <img src="sales1.png">
+
+### Storage cluster of huge / large datasets 
+
+<img src="s3.png">
+
+### reading data from amazon s3 to dask cluster (dataframe)
+
+<img src="s31.png">
+
+### by default s3fs protocol is required by dask to access data from amazon s3
+
+## ON client machine 
+```
+pip install s3fs 
+```
+
+### Note: installing s3fs in each cluster 
