@@ -51,3 +51,10 @@ Successfully installed scikit-learn-1.6.1 threadpoolctl-3.6.0
 
 <img src="mds.png">
 
+
+### Installing dask-ml in dask cluster 
+
+```
+pip install scikit-learn  matplotlib  dask-ml 
+
+```
