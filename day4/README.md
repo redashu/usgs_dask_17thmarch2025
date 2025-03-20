@@ -58,3 +58,12 @@ Successfully installed scikit-learn-1.6.1 threadpoolctl-3.6.0
 pip install scikit-learn  matplotlib  dask-ml 
 
 ```
+
+## Image process 
+
+### installing modules
+
+```
+ pip install dask-image scikit-image imageio 
+
+```
