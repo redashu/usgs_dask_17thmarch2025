@@ -45,3 +45,9 @@ Installing collected packages: threadpoolctl, scikit-learn
 Successfully installed scikit-learn-1.6.1 threadpoolctl-3.6.0
 
 ```
+
+
+### Model training process 
+
+<img src="mds.png">
+
